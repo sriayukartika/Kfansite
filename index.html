@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K-Pop Fansite</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h1>K-POP FANSITE</h1>
+    <button class="menu-toggle">☰</button>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Members</a></li>
+        <li><a href="">Discography</a></li>
+        <li><a href="">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="1.jpg" alt="K-Pop Girl Group" />
+    <div class="hero-text">
+      <h2>K-POP GIRL GROUP</h2>
+      <p>BLACKPINK IN YOU AREA</p>
+    </div>
+  </section>
+
+  <!-- Member Profiles -->
+  <section class="members">
+    <h2>Member Profiles</h2>
+    <div class="profile-cards">
+      <div class="card"><img src="2.jpeg" alt="JISOO"><p>JISOO</p></div>
+      <div class="card"><img src="3.jpeg" alt="JENNIE"><p>JENNIE</p></div>
+      <div class="card"><img src="r.jpeg" alt="ROSE"><p>ROSE</p></div>
+      <div class="card"><img src="L.jpeg" alt="LISA"><p>LISA</p></div>
+    </div>
+  </section>
+
+  <!-- Discography -->
+  <section class="discography">
+    <h2>Discography</h2>
+    <div class="albums">
+      <div class="album">
+        <img src="6.jpeg" alt="First Single">
+        <p>First Single</p>
+        <span>2016</span>
+      </div>
+      <div class="album">
+        <img src="7.jpeg" alt="Second EP">
+        <p>Second EP</p>
+        <span>2018</span>
+      </div>
+      <div class="album">
+        <img src="8.jpeg" alt="Third Album">
+        <p>Third Album</p>
+        <span>2020</span>
+      </div>
+      <div class="album">
+        <img src="8.jpeg" alt="Third Album">
+        <p>Third Album</p>
+        <span>2020</span>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section class="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="photos">
+      <div class="photo"><img src="a.jpeg" alt="Group Photo"></div>
+      <div class="photo"><img src="b.jpeg" alt="Reality Show"></div>
+      <div class="photo"><img src="c.jpeg" alt="Member"></div>
+      <div class="photo"><img src="d.jpeg" alt="Reality"></div>
+      <div class="photo"><img src="e.jpeg" alt="member"></div>
+      <div class="photo"><img src="f.jpeg" alt="member"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>&copy; 2025 K-POP Fansite. All right reserved.</b></p>
+  </footer>
+
+  <!-- Script untuk hamburger menu -->
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navbar nav');
+    const links = document.querySelectorAll('.navbar nav ul li a');
+
+    toggleBtn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
