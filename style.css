@@ -229,8 +229,8 @@ footer {
   .navbar nav {
     position: fixed;
     top: 0;
-    right: -100%;
-    width: 70%;
+    right: -90%;
+    width: 50%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.95);
     display: flex;
@@ -274,3 +274,4 @@ footer {
     align-items: center;
   }
 }
+
