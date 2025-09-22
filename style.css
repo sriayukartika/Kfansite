@@ -22,7 +22,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 15px 25px; /* kasih ruang kiri-kanan */
     position: fixed;
     top: 0;
     left: 0;
@@ -56,7 +56,7 @@ section {
 /* Hamburger menu */
 .menu-toggle {
   display: none;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   background: none;
   border: none;
   color: pink;
@@ -228,16 +228,17 @@ footer {
 
   .navbar nav {
     position: fixed;
-    top: 0;
-    right: -50%;
-    width: 60%;
-    height: 20vh;
+    top: 70px; /* kasih jarak dari atas biar nggak nutup header */
+    right: -100%;
+    width: 60%; /* jangan full, cukup 60% layar */
+    height: auto; /* otomatis sesuai isi */
     background: rgba(0, 0, 0, 0.95);
+    border-radius: 12px 0 0 12px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 80px 20px;
-    gap: 20px;
+    padding: 20px;
+    gap: 15px;
     transition: right 0.3s ease-in-out;
   }
 
@@ -247,12 +248,12 @@ footer {
 
   .navbar nav ul {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     width: 100%;
   }
 
   .navbar nav ul li a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     color: pink;
   }
@@ -274,14 +275,3 @@ footer {
     align-items: center;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
