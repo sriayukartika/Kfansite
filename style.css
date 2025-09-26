@@ -76,15 +76,15 @@ section {
     display: block;
 }
 .hero-text {
-  position: absolute;
-  bottom: 15%; /* lebih turun dari bawah poster */
-  left: 30px;
-  color: pink;
-  text-align: left;
-  background-color: black;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 80%;
+    position: absolute;
+    bottom: 15%; /* lebih turun biar poster lebih kelihatan */
+    left: 30px;
+    color:pink;
+    text-align: left;
+    background-color:black;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
 }
 .hero-text h2 {
     margin: 0 0 10px;
@@ -226,15 +226,14 @@ footer {
   .menu-toggle {
     display: block;
   }
-    
-  @media (max-width: 768px) {
+
   .navbar nav {
     position: fixed;
-    top: 80px; /* agak turun, jadi nggak nutup header & poster */
+    top: 80px; /* agak turun biar ga nutup poster */
     right: -100%;
-    width: 50%; /* lebih kecil, hanya setengah layar */
-    height: auto; /* tinggi otomatis sesuai isi menu */
-    max-height: 300px; /* batasi biar tidak terlalu panjang */
+    width: 50%; /* lebih kecil, setengah layar */
+    height: auto; /* otomatis sesuai isi */
+    max-height: 300px; /* batasi tinggi */
     background: rgba(0, 0, 0, 0.95);
     border-radius: 12px 0 0 12px;
     display: flex;
@@ -244,7 +243,6 @@ footer {
     gap: 15px;
     transition: right 0.3s ease-in-out;
   }
-}
 
   .navbar nav.active {
     right: 0;
@@ -279,7 +277,3 @@ footer {
     align-items: center;
   }
 }
-
-
-
-
