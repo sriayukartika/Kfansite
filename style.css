@@ -228,9 +228,9 @@ footer {
 
   .navbar nav {
     position: fixed;
-    top: 70px; /* kasih jarak dari atas biar nggak nutup header */
+    top: 70px; 
     right: -100%;
-    width: 40%; 
+    width: 20%;
     height: auto; /* otomatis sesuai isi */
     background: rgba(0, 0, 0, 0.95);
     border-radius: 12px 0 0 12px;
@@ -275,5 +275,6 @@ footer {
     align-items: center;
   }
 }
+
 
 
