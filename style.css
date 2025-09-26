@@ -230,7 +230,7 @@ footer {
     position: fixed;
     top: 70px; /* kasih jarak dari atas biar nggak nutup header */
     right: -100%;
-    width: 50%; /* jangan full, cukup 60% layar */
+    width: 60%; /* jangan full, cukup 60% layar */
     height: auto; /* otomatis sesuai isi */
     background: rgba(0, 0, 0, 0.95);
     border-radius: 12px 0 0 12px;
@@ -275,4 +275,3 @@ footer {
     align-items: center;
   }
 }
-
